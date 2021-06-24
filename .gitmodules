@@ -1,6 +1,6 @@
-[submodule "backend"]
-	path = backend
+[submodule "confiax-backend"]
+	path = confiax-backend
 	url = https://github.com/ClaitonBarreto/confiax-backend.git
-[submodule "frontend"]
-	path = frontend
+[submodule "confiax-frontend"]
+	path = confiax-frontend
 	url = https://github.com/ClaitonBarreto/confiax-frontend.git
