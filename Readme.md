@@ -27,10 +27,23 @@ This project uses the git submodule feature. But don't worry, if you're not fami
     git clone --recurse-submodules https://github.com/ClaitonBarreto/confiax.git
 ```
 
+- Run only the ```mysql``` container (this is necessary because typeORM can't create database directly).
+
+
+```docker 
+    docker-compose up mysql -d
+```
+
+- Access the database through your preferred database managment system
+
+- Create a databse with name ```confiax```
+
+- Run the others services
+
 - If you only run the project, run docker-compose command in root directory
 
 ```docker 
-    docker-compose up
+    docker-compose up -d
 ```
 
 - After few minutes (docker will go download base images and create containers) you can access http://localhost:3000 in your browser, and use the application
