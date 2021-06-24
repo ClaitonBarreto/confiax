@@ -14,7 +14,7 @@ services:
     backend:
         build:
             context: .
-            dockerfile: ./backend/Dockerfile
+            dockerfile: ./confiax-backend/Dockerfile
         image: api
         depends_on: 
            - mysql
@@ -25,7 +25,7 @@ services:
     frontend:
         build:
             context: .
-            dockerfile: ./frontend/Dockerfile
+            dockerfile: ./confiax-frontend/Dockerfile
         image: web
         stdin_open: true
         tty: true
